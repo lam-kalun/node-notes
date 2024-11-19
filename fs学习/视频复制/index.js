@@ -1,5 +1,6 @@
 const fs = require('fs');
 const process = require('process');
+// resolve后路径格式会正式一点
 const { resolve } = require('path')
 
 const mp4File = fs.readFileSync(resolve(__dirname, '你是地球.mp4'));
@@ -13,6 +14,7 @@ rs.on('data', chunk => {
   ws.write(chunk)
 });
 rs.on('end', () => {
+  // 查询效率
   console.log(process.memoryUsage());
 });
 
