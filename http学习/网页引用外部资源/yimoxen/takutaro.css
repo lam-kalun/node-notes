@@ -1,0 +1,13 @@
+.li-qie {
+  width: 600px;
+  height: 100px;
+  margin-bottom: 20px;
+  background-color: gray;
+}
+
+.mao-kan {
+  width: 200px;
+  height: 50px;
+  background: linear-gradient(red, yellow);
+  cursor: pointer;
+}
